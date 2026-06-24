@@ -63,10 +63,15 @@
             <h2 class="section-title reveal-up">Nuestro Propósito <span>(Art. 26)</span></h2>
             <div class="bento-grid mt-5">
                 
-                <div class="bento-item bento-large bg-dark-slate reveal-up" style="--delay: 0.1s">
+                <div class="bento-item bento-large bg-dark-slate reveal-up d-flex flex-column" style="--delay: 0.1s">
                     <div class="bento-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                    <h3>Sistemas de Información</h3>
-                    <p>Desarrollar e implementar los sistemas de información geográfica y estadística, para analizar y representar espacialmente la información del ICIPLAM.</p>
+                    <div class="pe-5">
+                        <h3>Sistemas de Información</h3>
+                        <p>Desarrollar e implementar los sistemas de información geográfica y estadística, para analizar y representar espacialmente la información del ICIPLAM.</p>
+                    </div>
+                    <div class="mt-auto pt-4 text-center">
+                        <img src="assets/pmdu.png" alt="Sistemas de Información PMDU" class="img-fluid rounded-3 shadow" style="border: 1px solid rgba(255,255,255,0.1);">
+                    </div>
                 </div>
 
                 <div class="bento-item bg-mustard text-dark reveal-up" style="--delay: 0.2s">
@@ -262,9 +267,8 @@
                 <!-- Step 1 -->
                 <div class="timeline-item left reveal-up" style="--delay: 0.1s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por: <img src="ruta.jpg" alt="Fotogrametría" class="w-100 h-100" style="object-fit:cover; border-radius:8px;"> -->
-                            <i class="fa-solid fa-image fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/fotogrametria.png" alt="Fotogrametría" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2 flex-row-reverse">
@@ -279,9 +283,8 @@
                 <!-- Step 2 -->
                 <div class="timeline-item right reveal-up" style="--delay: 0.2s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por <img> -->
-                            <i class="fa-solid fa-satellite fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/gnss.png" alt="GNSS" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2">
@@ -296,9 +299,8 @@
                 <!-- Step 3 -->
                 <div class="timeline-item left reveal-up" style="--delay: 0.3s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por <img> -->
-                            <i class="fa-solid fa-broadcast-tower fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/RTK.png" alt="RTK" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2 flex-row-reverse">
@@ -313,9 +315,8 @@
                 <!-- Step 4 -->
                 <div class="timeline-item right reveal-up" style="--delay: 0.4s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por <img> -->
-                            <i class="fa-solid fa-braille fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/nube_de_puntos.png" alt="Nube de puntos" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2">
@@ -330,9 +331,8 @@
                 <!-- Step 5 -->
                 <div class="timeline-item left reveal-up" style="--delay: 0.5s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por <img> -->
-                            <i class="fa-solid fa-mountain-sun fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/mde.png" alt="MDE" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2 flex-row-reverse">
@@ -347,9 +347,8 @@
                 <!-- Step 6 -->
                 <div class="timeline-item right reveal-up" style="--delay: 0.6s">
                     <div class="timeline-content">
-                        <div class="timeline-img-placeholder">
-                            <!-- TODO: Reemplazar div por <img> -->
-                            <i class="fa-solid fa-map fs-3"></i>
+                        <div class="timeline-img-placeholder p-0">
+                            <img src="assets/lenguaje_basico/ortofoto.png" alt="Ortofoto" class="w-100 h-100" style="object-fit:cover;">
                         </div>
                         <div class="text-start">
                             <div class="d-flex align-items-center gap-3 mb-2">
@@ -494,6 +493,50 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías Ecosistema -->
+    <section id="tecnologias" class="section-padding bg-white overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <h2 class="section-title">Tecnologías utilizadas dentro de nuestro Ecosistema SIGETUX</h2>
+                <p class="subtitle text-muted">Herramientas, lenguajes y frameworks que potencian nuestras plataformas</p>
+            </div>
+        </div>
+        
+        <div class="marquee-container reveal-up" style="--delay: 0.2s">
+            <div class="marquee-content">
+                <!-- Group 1 -->
+                <img src="assets/icons/GeoServer_500.png" alt="GeoServer" class="tech-icon" title="GeoServer">
+                <img src="assets/icons/devicon--python.png" alt="Python" class="tech-icon" title="Python">
+                <img src="assets/icons/devicon--fastapi.png" alt="FastAPI" class="tech-icon" title="FastAPI">
+                <img src="assets/icons/devicon--postgresql-wordmark.png" alt="PostgreSQL" class="tech-icon" title="PostgreSQL">
+                <img src="assets/icons/qgis-icon_anita02.png" alt="QGIS" class="tech-icon" title="QGIS">
+                <img src="assets/icons/material-icon-theme--react-ts.png" alt="React TS" class="tech-icon" title="React TS">
+                <img src="assets/icons/devicon--tailwindcss.png" alt="TailwindCSS" class="tech-icon" title="TailwindCSS">
+                <img src="assets/icons/vscode-icons--file-type-html.png" alt="HTML" class="tech-icon" title="HTML">
+                <img src="assets/icons/vscode-icons--file-type-js-official.png" alt="JavaScript" class="tech-icon" title="JavaScript">
+                <img src="assets/icons/nonicons--css-16.png" alt="CSS" class="tech-icon" title="CSS">
+                <img src="assets/icons/material-icon-theme--git.png" alt="Git" class="tech-icon" title="Git">
+                <img src="assets/icons/mdi--github.png" alt="GitHub" class="tech-icon" title="GitHub">
+                <img src="assets/icons/material-icon-theme--vscode.png" alt="VS Code" class="tech-icon" title="VS Code">
+                
+                <!-- Group 2 (Duplicate for infinite scroll) -->
+                <img src="assets/icons/GeoServer_500.png" alt="GeoServer" class="tech-icon" title="GeoServer">
+                <img src="assets/icons/devicon--python.png" alt="Python" class="tech-icon" title="Python">
+                <img src="assets/icons/devicon--fastapi.png" alt="FastAPI" class="tech-icon" title="FastAPI">
+                <img src="assets/icons/devicon--postgresql-wordmark.png" alt="PostgreSQL" class="tech-icon" title="PostgreSQL">
+                <img src="assets/icons/qgis-icon_anita02.png" alt="QGIS" class="tech-icon" title="QGIS">
+                <img src="assets/icons/material-icon-theme--react-ts.png" alt="React TS" class="tech-icon" title="React TS">
+                <img src="assets/icons/devicon--tailwindcss.png" alt="TailwindCSS" class="tech-icon" title="TailwindCSS">
+                <img src="assets/icons/vscode-icons--file-type-html.png" alt="HTML" class="tech-icon" title="HTML">
+                <img src="assets/icons/vscode-icons--file-type-js-official.png" alt="JavaScript" class="tech-icon" title="JavaScript">
+                <img src="assets/icons/nonicons--css-16.png" alt="CSS" class="tech-icon" title="CSS">
+                <img src="assets/icons/material-icon-theme--git.png" alt="Git" class="tech-icon" title="Git">
+                <img src="assets/icons/mdi--github.png" alt="GitHub" class="tech-icon" title="GitHub">
+                <img src="assets/icons/material-icon-theme--vscode.png" alt="VS Code" class="tech-icon" title="VS Code">
             </div>
         </div>
     </section>

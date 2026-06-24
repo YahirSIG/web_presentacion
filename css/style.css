@@ -663,3 +663,64 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--clr-mustard);
     transition: width 0.3s ease;
 }
+
+/* Tech Marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    background: transparent;
+    display: flex;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+}
+
+.marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    animation: scroll-marquee 40s linear infinite;
+    padding-left: 80px;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.tech-icon {
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.5);
+    transition: all 0.4s ease;
+}
+
+.tech-icon:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.15);
+}
+
+@keyframes scroll-marquee {
+    to {
+        transform: translateX(calc(-50% - 40px));
+    }
+}

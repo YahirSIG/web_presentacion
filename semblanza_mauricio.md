@@ -1,0 +1,7 @@
+Profesional especializado en el desarrollo de software, con sólidos conocimientos en lenguajes de programación de alto nivel, administración de bases de datos, control y gestión de repositorios de código, así como en la implementación y administración de infraestructura en la nube mediante plataformas como Azure y AWS.
+
+A lo largo de su trayectoria profesional, ha participado en el análisis, diseño, desarrollo e implementación de sistemas de información orientados a atender necesidades específicas en distintos sectores, incluyendo áreas administrativas y turísticas. Su experiencia abarca el uso de tecnologías de desarrollo modernas, motores de bases de datos y la integración de soluciones de hardware para proyectos tecnológicos, incluyendo plataformas de prototipado electrónico como Arduino.
+
+Actualmente se desempeña en el Instituto Ciudadano de Planeación Municipal (ICIPLAM), dentro del área de Sistemas de Información Geográfica (SIG), donde participa en el mantenimiento, desarrollo y optimización de aplicaciones web geoespaciales. Asimismo, colabora en la administración de servidores, despliegue de servicios y gestión de infraestructura tecnológica, garantizando la disponibilidad, estabilidad y rendimiento de las aplicaciones institucionales mediante prácticas orientadas a DevOps.
+
+Cuenta además con experiencia en el manejo de Sistemas de Información Geográfica, publicación de cartografía digital, procesamiento de información geoespacial y generación de modelos digitales para la visualización y análisis territorial.
