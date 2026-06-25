@@ -919,6 +919,59 @@
         </div>
     </div>
 
+    <!-- Interactive Game Section -->
+    <section id="interactive-game" class="section-padding bg-dark text-white text-center">
+        <div class="container reveal-up">
+            <span class="badge bg-mustard text-dark mb-3 px-3 py-2 text-uppercase fw-bold" style="letter-spacing: 1px;">Especial para Jóvenes</span>
+            <h2 class="section-title text-white">¡Misión SIGETUX!</h2>
+            <p class="subtitle text-light opacity-75 mb-4">¿Tienes lo necesario para ser nuestro piloto estrella? Toma el control del dron de fotogrametría y recolecta datos para el SIGETUX mientras esquivas obstáculos urbanos.</p>
+            <button class="btn btn-custom px-5 py-3 fs-4 fw-bold shadow-lg" data-bs-toggle="modal" data-bs-target="#gameModal">
+                <i class="fa-solid fa-gamepad me-2"></i> Jugar Ahora
+            </button>
+        </div>
+    </section>
+
+    <!-- Game Modal -->
+    <div class="modal fade" id="gameModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark border-0">
+                <div class="modal-header border-0 pb-0 position-absolute top-0 w-100 z-3" style="background: linear-gradient(rgba(0,0,0,0.8), transparent);">
+                    <h5 class="modal-title text-white fw-bold"><i class="fa-solid fa-helicopter"></i> Misión SIGETUX: Vuelo Fotogramétrico</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 d-flex flex-column justify-content-center align-items-center position-relative overflow-hidden" style="background-color: #111;">
+                    <!-- HUD / Top score -->
+                    <div class="position-absolute top-0 end-0 p-3 z-2 mt-5">
+                        <span class="badge bg-mustard text-dark fs-5">Puntos: <span id="currentGameScore">0</span></span>
+                    </div>
+
+                    <!-- Canvas Container -->
+                    <div class="w-100 h-100 d-flex justify-content-center align-items-center px-md-5">
+                        <canvas id="gameCanvas" width="800" height="400" class="shadow-lg border border-secondary border-opacity-25 rounded-3" style="max-width: 100%; max-height: 80vh; touch-action: none; background: #87CEEB;"></canvas>
+                    </div>
+
+                    <!-- Start Screen Overlay -->
+                    <div id="gameStartScreen" class="position-absolute top-50 start-50 translate-middle text-center w-100 z-3" style="pointer-events: none;">
+                        <div class="d-inline-block bg-dark bg-opacity-75 p-4 rounded-4 border border-secondary">
+                            <h2 class="text-mustard fw-black mb-3">Preparando Vuelo...</h2>
+                            <p class="text-white mb-4">Toca la pantalla o presiona la <strong>Barra Espaciadora</strong> para volar.<br>¡Esquiva los edificios y antenas para recolectar pines de datos!</p>
+                            <button id="btnStartGame" class="btn btn-primary px-4 py-2" style="pointer-events: auto;">INICIAR VUELO</button>
+                        </div>
+                    </div>
+
+                    <!-- Game Over Overlay -->
+                    <div id="gameOverScreen" class="position-absolute top-50 start-50 translate-middle text-center w-100 z-3 d-none">
+                        <div class="d-inline-block bg-dark bg-opacity-90 p-5 rounded-4 border border-danger shadow-lg">
+                            <h2 class="text-danger fw-black mb-2"><i class="fa-solid fa-triangle-exclamation"></i> ¡COLISIÓN!</h2>
+                            <p class="text-white fs-5 mb-4">Datos recolectados: <strong id="finalScore" class="text-mustard fs-2">0</strong></p>
+                            <button id="btnRestartGame" class="btn btn-mustard text-dark fw-bold px-4 py-2 mt-2">INTENTAR DE NUEVO <i class="fa-solid fa-rotate-right ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Quiz Section -->
     <section id="quiz" class="section-padding" style="background-color: var(--clr-mustard);">
         <div class="container">
@@ -950,6 +1003,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
 </body>
 
 </html>
