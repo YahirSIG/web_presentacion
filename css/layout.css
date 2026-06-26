@@ -1,0 +1,175 @@
+/* Navigation */
+.logos-container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 0.625rem 1.5rem; /* ~10px 24px */
+    border-radius: 6.25rem; /* ~100px */
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.05); /* ~4px 30px */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.brand-logo {
+    height: 3.125rem; /* ~50px */
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.ayto-logo { height: 3.75rem; /* ~60px */ }
+.iciplam-logo { height: 2.8125rem; /* ~45px */ }
+
+.divider {
+    width: 2px;
+    height: 2.1875rem; /* ~35px */
+    background-color: rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .logos-container {
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        justify-content: center;
+    }
+    .brand-logo {
+        height: 2.5rem;
+    }
+    .ayto-logo { height: 3rem; }
+    .iciplam-logo { height: 2.25rem; }
+    .divider { height: 1.5rem; }
+}
+
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    padding-top: 2rem;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 1.05;
+}
+
+.logo-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 25rem; /* ~400px */
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.csiyg-hero-logo {
+    width: 70%;
+    z-index: 2;
+    filter: drop-shadow(0 1.25rem 1.875rem rgba(0,0,0,0.15)); /* ~0 20px 30px */
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-1 {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed var(--clr-slate);
+    opacity: 0.2;
+    animation: spin 30s linear infinite;
+}
+
+.circle-2 {
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, var(--clr-mustard) 0%, transparent 70%);
+    opacity: 0.1;
+    filter: blur(20px);
+}
+
+/* Sections */
+.section-padding {
+    padding: 6.25rem 0; /* ~100px 0 */
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 4rem 0; /* Less padding on mobile */
+    }
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--clr-dark);
+}
+
+.section-title span {
+    color: var(--clr-slate);
+    font-weight: 400;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Tech Marquee */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem 0; /* ~40px 0 */
+    background: transparent;
+    display: flex;
+}
+
+.marquee-container::before,
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 9.375rem; /* ~150px */
+    height: 100%;
+    z-index: 2;
+}
+
+.marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem; /* ~80px */
+    width: max-content;
+    animation: scroll-marquee 40s linear infinite;
+    padding-left: 5rem; /* ~80px */
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.tech-icon {
+    height: 3.75rem; /* ~60px */
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.5);
+    transition: all 0.4s ease;
+}
+
+.tech-icon:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.15);
+}
+
+@keyframes scroll-marquee {
+    to {
+        transform: translateX(calc(-50% - 2.5rem)); /* calc(-50% - 40px) */
+    }
+}

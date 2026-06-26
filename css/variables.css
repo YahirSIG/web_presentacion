@@ -1,0 +1,17 @@
+:root {
+    /* Color Palette Extracted from Logos */
+    --clr-mustard: #E2A829;
+    --clr-mustard-hover: #C59120;
+    --clr-slate: #5E6A70;
+    --clr-slate-dark: #3F484D;
+    --clr-dark: #1A1C1D;
+    --clr-light: #F7F9FA;
+    --clr-white: #FFFFFF;
+    
+    /* Typography */
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    
+    /* Easing for smooth animations */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
